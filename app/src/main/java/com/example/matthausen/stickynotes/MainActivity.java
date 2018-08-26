@@ -10,6 +10,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         mydb = new DBHelper(getApplicationContext());
         mobile_list = (ListView) findViewById(R.id.mobile_list);
         loadData();
+
 
     }
 
